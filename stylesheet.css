@@ -1,0 +1,1264 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+
+/* SOURCES --------------------------------
+
+Tab icon = https://findicons.com/pack/1501/world_of_copland_1
+
+
+
+
+/* Page overall design and common imagery */
+
+body {
+    height: 100%;
+}
+
+#wrap{
+	width:805px;
+	height:auto;
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#header {
+    
+    width: 805px;
+    height: 303px;
+    background-image: url("bannerinvsmol.JPG");
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -20px;
+    border-radius:  0px 0px 20px 20px;
+    border: 0px 5px 5px 5px;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+
+
+#leftsidewrap {
+    width: 140px;
+    height: 100%;
+    float: left;
+    margin-top: 14px;
+    margin-left: 54px;
+}
+
+#rightsidewrap {
+    width: 521px;
+    height: 100%;
+    float: right;
+    margin-top: 7px;
+    margin-right: 65px;
+    margin-bottom: 16px;
+    padding-left: 30px;
+    
+}
+
+
+
+#logobox{
+	width:140px;
+	height:54px;
+	background-image:url(assets/img/original/logosmall.png);
+	margin-bottom:16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Table Properties*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sidebar & Link properties */
+
+#menubox a{
+	width:132px;
+	background-color:transparent;
+	margin-top:0px;
+	margin-left:8px;
+	margin-right:0px;
+	margin-bottom:0px;
+    display: inline-block;
+}
+
+#menuitems a{
+	width:132px;
+	background-color:darkgrey;
+    color:white;
+	margin-bottom:2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    font-family: typebold;
+    font-size: 15px;
+    display: inline-block;
+    
+}
+
+#menuitems :hover {
+	color: red;
+    font-style: italic;
+    background-color: gray;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    display: inline-block;
+    
+  }
+
+
+
+
+
+
+
+/* Fonts/Text */
+
+@font-face {
+    font-family: Deejay;
+    src: url(assets/fnt/Deejay_Font.ttf);
+}
+
+@font-face {
+    font-family: Zector;
+    src: url(assets/fnt/Zector.otf);
+}
+
+@font-face {
+    font-family: typereg;
+    src: url(assets/fnt/XTypewriter-Regular.otf);
+}
+
+@font-face {
+    font-family: typebold;
+    src: url(assets/fnt/XTypewriter-Bold.otf);
+}
+
+h2 {
+    font-size: 30px;
+    font-family: typebold;
+}
+
+.imgcredit {
+    font-size: 13px;
+    font-family: typereg;
+}
+
+.imgcreditp {
+    font-family: typereg;
+    padding-left: 3px;
+}
+
+.gear {
+    font-size: 15px;
+}
+
+h4 {
+    font: 5px;
+    font-weight: bold;
+    font-family: typereg;
+    letter-spacing: 3px;
+}
+
+
+p {
+    font-family: typereg;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Photography previews */
+
+
+#vanlake {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/vanlake.jpg);
+    background-size: cover;
+    background-position-x: -10px;
+    filter: grayscale(100%);
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#vanlake:hover {
+    filter: grayscale(0%);
+    
+}
+
+#lighthouse {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/lighthouse.JPG);
+    background-size: cover;
+    background-position-x: -10px;
+    filter: grayscale(100%);
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#lighthouse:hover {
+    filter: grayscale(0%);
+    
+}
+
+
+#scarbhotel {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/scarboroughhotel.jpg);
+    background-size: cover;
+    background-position-y: -40px;
+    filter: grayscale(100%);
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#scarbhotel:hover {
+    filter: grayscale(0%);
+    
+}
+
+#fileybeach {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/fileybeach.JPG);
+    background-size: cover;
+    
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#fileybeach:hover {
+    filter: grayscale(0%);
+    
+}
+
+#scarbdocks {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/scarbdocks.jpg);
+    background-size: cover;
+    background-position-y: -40px;
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#scarbdocks:hover {
+    filter: grayscale(0%);
+    
+}
+
+
+
+#zoobird {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/lonelyzoobird.jpg);
+    background-size: cover;
+    background-position-x: -30px;
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#zoobird:hover {
+    filter: grayscale(0%);
+    
+}
+
+#cooks2021 {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/cooks2021.jpg);
+    background-size: cover;
+    background-position-x: -20px;
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#cooks2021:hover {
+    filter: grayscale(0%);
+    
+}
+
+
+
+
+#skysea {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/skysea.jpg);
+    background-size: cover;
+    
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#skysea:hover {
+    filter: grayscale(0%);
+    
+}
+
+#fileylighthouse {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/fileylighthouse.jpg);
+    background-size: cover;
+    
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#fileylighthouse:hover {
+    filter: grayscale(0%);
+    
+}
+
+
+
+#nycparktree {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/nycparktree.jpg);
+    background-size: cover;
+    background-position-y: -40px;
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#nycparktree:hover {
+    filter: grayscale(0%);
+    
+}
+
+#gothicceiling {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/bedroomceilinggoth.jpg);
+    background-size: cover;
+    
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#gothicceiling:hover {
+    filter: grayscale(0%);
+    
+}
+
+
+#nycskylinestreet {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/nycskylinestreetov.jpg);
+    background-size: cover;
+    background-position-x: -20px;
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#nycskylinestreet:hover {
+    filter: grayscale(0%);
+    
+}
+
+
+#santafest {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/santafest2019.jpg);
+    background-size: cover;
+    background-position-y: -15px;
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#santafest:hover {
+    filter: grayscale(0%);
+    
+}
+
+
+#evilempire {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/evilempire.jpg);
+    background-size: cover;
+    
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#evilempire:hover {
+    filter: grayscale(0%);
+    
+}
+
+
+#gothtreetrain {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/gothingtreetrain.jpg);
+    background-size: cover;
+    
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#gothtreetrain:hover {
+    filter: grayscale(0%);
+    
+}
+
+#cheeseboard {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/cheeseboard.jpg);
+    background-size: cover;
+    
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#cheeseboard:hover {
+    filter: grayscale(0%);
+    
+}
+
+#lakedis {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/lakedis.jpg);
+    background-size: cover;
+    
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#lakedis:hover {
+    filter: grayscale(0%);
+    
+}
+
+#treefall {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/treecoverwaterfall.jpg);
+    background-size: cover;
+    
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#treefall:hover {
+    filter: grayscale(0%);
+    
+}
+
+
+#field {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/fieldinnit.jpg);
+    background-size: cover;
+    
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#field:hover {
+    filter: grayscale(0%);
+    
+}
+
+
+#benidorm {
+    width: 150px;
+    height: 150px;
+    background-image: url(assets/img/photography/benidorm.jpg);
+    background-size: cover;
+    background-position-x: -90px;
+    filter: grayscale(100%);
+    margin-top:5px;
+    margin-left: 5px;
+    float: left;
+}
+
+#benidorm:hover {
+    filter: grayscale(0%);
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* Album covers */
+
+#electricwarrior {
+    background-image: url(assets/img/covers/electricwarrior.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#burningbridges {
+    background-image: url(assets/img/covers/burningbridges.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#soulmining {
+    background-image: url(assets/img/covers/soulmining.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#pcnl {
+    background-image: url(assets/img/covers/pcnl.png);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#abbeyroad {
+    background-image: url(assets/img/covers/abbeyroad.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#whitealbum {
+    background-image: url(assets/img/covers/whitealbum.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+
+#kickinxs {
+    background-image: url(assets/img/covers/kickinxs.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#upjoydiv {
+    background-image: url(assets/img/covers/upjoydiv.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+
+#franzf {
+    background-image: url(assets/img/covers/frazf.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#odysseyandoracle {
+    background-image: url(assets/img/covers/odysseyandoracle.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Song rec covers */
+
+
+#irobot {
+    background-image: url(assets/img/covers/irobot.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+
+
+#lolapowermen {
+    background-image: url(assets/img/covers/lolapowermen.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#sulk {
+    background-image: url(assets/img/covers/sulk.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+
+#bnas {
+    background-image: url(assets/img/covers/bnas.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#highland {
+    background-image: url(assets/img/covers/highland.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+
+#ngd {
+    background-image: url(assets/img/covers/ngd.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+
+#bite {
+    background-image: url(assets/img/covers/bite.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+
+#lafemmda {
+    background-image: url(assets/img/covers/lafemmda.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+
+#coolforcats {
+    background-image: url(assets/img/covers/coolforcats.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#jonlemon {
+    background-image: url(assets/img/covers/doublefantasy.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+
+#hotfuss {
+    background-image: url(assets/img/covers/hotfuss.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#bookends {
+    background-image: url(assets/img/covers/bookends.jpeg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+
+#oj {
+    background-image: url(assets/img/covers/ojsimpson.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#speakingintongues {
+    background-image: url(assets/img/covers/speakingintongues.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#aural {
+    background-image: url(assets/img/covers/aural.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#happyhour {
+    background-image: url(assets/img/covers/londonnil.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#lafemme {
+    background-image: url(assets/img/covers/psychotrop.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+#lazerbeam {
+    background-image: url(assets/img/covers/lazerbeam.jpg);
+    background-size: cover;
+    width: 78px;
+    height: 78px;
+    
+    float: left;
+}
+
+
+
+
+
+
+
+
+.centertext {
+    text-align: center;
+}
+
+
+th {
+    font-family: typereg;
+    text-align: center;
+}
+
+td {
+    font-family: typereg;
+    text-align: center;
+}
+
+
+
+
+
+.icon {
+    font-family: 'Deejay';
+    font-size: 310px;
+    word-break: break-all;
+}
+
+#musicsubtitle {
+    margin-bottom: 20px;
+}
+
+#musicicon {
+    font-size: 250px;
+    float: right;
+}
+
+#recommendations {
+    
+}
+
+.title {
+    font-size: 50px;
+    font-family: typebold;
+    font-weight: bold;
+    letter-spacing: 20px;
+    padding-bottom: 12px;
+}
+
+.contactdetails {
+    font-family: typebold;
+    letter-spacing: 4px;
+}
+
+
+
+
+
+/*Content   */
+
+.line{
+    width: 100%;
+    height: 10px;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    margin-top: 30px;
+    }
+
+.imgbord {
+    border: 2px;
+    border-style: dashed;
+    
+}
+
+
+
+img {
+    filter: grayscale(100%);
+}
+
+#mehomeimgphotography {
+    float: left;
+}
+
+
+
+
+.mehomeimg {
+    filter: blur(1px);
+}
+
+a:hover {
+    color: maroon;
+}
+
+#teacardbanner {
+    width: 100%;
+    background-image: url(assets/img/buttonbackgrounds/teacards.JPG);
+    height: 105px;
+    background-position: center;
+    background-size: cover;
+    background-position-y: -70px;
+    border-width: 2px;
+    border-color: black;
+    border-style: dashed;
+    filter: grayscale(100%);
+    
+}
+
+
+
+#triviabanner {
+    width: 100%;
+    background-image: url(assets/img/doyadoya.jpg);
+    height: 290px;
+    background-position: center;
+    background-size: cover;
+    
+    border-width: 2px;
+    border-color: black;
+    border-style: dashed;
+    filter: grayscale(100%);
+}
+
+#newspapersbanner {
+    width: 100%;
+    background-image: url(assets/img/buttonbackgrounds/teacards.JPG);
+    height: 105px;
+    background-position: center;
+    background-size: cover;
+    background-position-y: -70px;
+    border-width: 2px;
+    border-color: black;
+    border-style: dashed;
+    filter: grayscale(100%);
+}
+
+#videosbanner {
+    width: 100%;
+    background-image: url(assets/img/buttonbackgrounds/videos.JPG);
+    height: 105px;
+    background-position: center;
+    background-size: cover;
+    background-position-y: -100px;
+    border-width: 2px;
+    border-color: black;
+    border-style: dashed;
+    filter: grayscale(100%);
+    
+}
+
+
+
+#musicintroend {
+    margin-bottom: 35px;
+}
+
+/*Buttons */
+
+.landscapebutton {
+    height: auto;
+    width: 99.48%;
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+    background-color: black;
+    padding-top: 10px;
+    font-size: 40px;
+    padding-bottom: 10px;
+    font-family: typebold;
+    color: white;
+}
+
+
+.landscapebutton:hover a {
+    font-style: italic;
+    color: red;
+    font-family: typereg;
+    text-decoration: underline;
+    
+}
+
+
+/* Teacards */
+
+.teacardprov {
+    height: auto;
+    width: 99.48%;
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+    background-color: black;
+    padding-top: 10px;
+    font-size: 40px;
+    padding-bottom: 10px;
+    font-family: typebold;
+    color: white;
+}
+
+
+.teacardprov:hover a {
+    font-style: italic;
+    color: red;
+    font-family: typereg;
+    text-decoration: underline;
+    
+}
+
+
+#historyofmotorcars {
+    background-image: url(assets/img/teacards/brookebond/historyofmotorcars/historyofmotorcarfront.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    
+    float: left;
+}
+
+
+#historyofmotorcars:hover {
+    background-image: url(assets/img/teacards/brookebond/historyofmotorcars/historyofmotorcarback.jpg);
+    
+}
+
+
+
+/* <-----------------------> MODALS <-----------------------> */
+
+.bgmodal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalcontent {
+    position:relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    max-height: 100%;
+    /* top: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%); */
+    border-radius: 5px;
+    /* margin-top: 100px; */
+    
+    
+}
+
+.portrait {
+    max-width: 550px;
+    filter: grayscale(0) !important;
+}
+
+.landscape {
+    max-width: 1000px;
+    filter: grayscale(0) !important;
+}
+
+.modalheader {
+    padding: 10px 16px;
+    background-color: maroon;
+    color: white;
+    font-family: typereg;
+    text-align: left;
+    border-radius:  5px 5px 0 0;
+    position: relative;
+    font-size: 13pt;
+    min-height: 60px;
+    
+    
+
+}
+
+.modalbody {
+    filter: grayscale(0) !important;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+
+.closemodal {
+    display: inline-block;
+    right: 0;
+    padding: 0px 30px 0px 100px;
+    position: absolute;
+    font-size: 33px;
+    background-color: white;
+    color: maroon;
+    font-family: monospace;
+    margin-top: 2px;
+}
+
+.closemodal:hover {
+    cursor:grab;
+    font-family: typebold;
+    
+}
+
+
+ .djimgmodal {
+    max-width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: black;
+}
+
+.tracklisting {
+    font-size: 13px;
+    font-family: monospace;
+}
+
+.audioplayer {
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    width: 100%;
+    justify-content: center;
+    
+} 
+
+.close {
+    width: 100%;
+    font-size: 40px;
+    background-color: red;
+    cursor: pointer;
+    
+}
+
+.close:hover
+
+/* .modalcontent {
+    position: relative;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 0;
+    width: 30%;
+    height: 30%;
+    top: 30%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}  */
+
+
+
+
+
+/* Photography widget */
+
+.pixelfed {
+    padding-top: 10px;
+    padding-left: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer properties */
+
+#footertext {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 10px;
+    font-style: italic;
+    color:black;
+    letter-spacing: 1px;
+    line-height: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
