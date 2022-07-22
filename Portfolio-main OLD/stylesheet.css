@@ -1,0 +1,322 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+
+/* SOURCES --------------------------------
+
+Tab icon = https://findicons.com/pack/1501/world_of_copland_1
+
+
+
+/* Page overall design and common imagery */
+
+body {
+    height: 100%;
+}
+
+#wrap{
+	width:805px;
+	height:303%;
+	margin-bottom:0px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#header {
+    
+    width: 805px;
+    height: 303px;
+    background-image: url("bannerinv.JPG");
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -20px;
+    border-radius:  0px 0px 20px 20px;
+    border: 0px 5px 5px 5px;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+
+
+#leftsidewrap {
+    width: 140px;
+    height: 100%;
+    float: left;
+    margin-top: 14px;
+    margin-left: 54px;
+}
+
+#rightsidewrap {
+    width: 521px;
+    height: 100%;
+    float: right;
+    margin-top: 7px;
+    margin-right: 65px;
+    margin-bottom: 16px;
+    padding-left: 30px;
+    
+}
+
+#rightsidewrap img {
+    width: 100%;
+}
+
+
+
+#logobox{
+	width:140px;
+	height:54px;
+	background-image:url(assets/img/original/logosmall.png);
+	margin-bottom:16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Table Properties*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
+/* Sidebar & Link properties */
+
+#menubox a{
+	width:132px;
+	background-color:transparent;
+	margin-top:0px;
+	margin-left:8px;
+	margin-right:0px;
+	margin-bottom:0px;
+    display: inline-block;
+}
+
+#menuitems a{
+	width:132px;
+	background-color:darkgrey;
+    color:white;
+	margin-bottom:2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    font-family: typebold;
+    font-size: 15px;
+    display: inline-block;
+    
+}
+
+#menuitems :hover {
+	color: red;
+    font-style: italic;
+    background-color: gray;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    display: inline-block;
+    
+  }
+
+
+
+
+
+
+
+/* Fonts/Text */
+
+@font-face {
+    font-family: Deejay;
+    src: url(assets/fnt/Deejay_Font.ttf);
+}
+
+@font-face {
+    font-family: Zector;
+    src: url(assets/fnt/Zector.otf);
+}
+
+@font-face {
+    font-family: typereg;
+    src: url(assets/fnt/XTypewriter-Regular.otf);
+}
+
+@font-face {
+    font-family: typebold;
+    src: url(assets/fnt/XTypewriter-Bold.otf);
+}
+
+h2 {
+    font-size: 30px;
+    font-family: typebold;
+}
+
+.imgcredit {
+    font-size: 13px;
+    font-family: typereg;
+}
+
+h4 {
+    font: 5px;
+    font-weight: bold;
+    font-family: typereg;
+    letter-spacing: 3px;
+}
+
+
+p {
+    font-family: typereg;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.centertext {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.icon {
+    font-family: 'Deejay';
+    font-size: 310px;
+    word-break: break-all;
+}
+
+.title {
+    font-size: 50px;
+    font-family: typebold;
+    font-weight: bold;
+    letter-spacing: 20px;
+    padding-bottom: 12px;
+}
+
+.contactdetails {
+    font-family: typebold;
+    letter-spacing: 4px;
+}
+
+
+
+
+
+/*Content   */
+
+.line{
+    width: 104%;
+    height: 10px;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    margin-top: 30px;
+    }
+
+.imgbord {
+    border: 2px;
+    border-style: dashed;
+    
+}
+
+img {
+    filter: grayscale(100%);
+}
+
+.mehomeimg {
+    filter: blur(1px);
+}
+
+a:hover {
+    color: maroon;
+}
+
+
+
+
+/*Buttons */
+
+.landscapebutton {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+    background-color: black;
+    padding-top: 10px;
+    font-size: 40px;
+    padding-bottom: 10px;
+    font-family: typebold;
+    color: white;
+}
+
+
+.landscapebutton:hover a {
+    font-style: italic;
+    color: red;
+    font-family: typereg;
+    text-decoration: underline;
+    
+}
+
+
+
+
+
+
+/* Photography widget */
+
+.pixelfed {
+    padding-top: 10px;
+    padding-left: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer properties */
+
+#footertext {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 10px;
+    font-style: italic;
+    color:black;
+    letter-spacing: 1px;
+    line-height: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}

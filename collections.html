@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<script>
+    /* Html Includes */
+
+
+
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+    </script> 
+
+
+
+
+
+<html>
+
+    
+    <header>
+        <div w3-include-html="assets/inc/header.html"></div>
+        <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    </header>
+
+
+
+    <body>
+
+        <div id="wrap">
+
+            <div id="header"></div>
+                
+                <div w3-include-html="assets/inc/leftsidewrapcontent.html"></div>
+
+                <div id="rightsidewrap">
+                    <div class="title">Collections</title></div>
+                    
+                    <p>This section is still largely a WIP so please bare with :)</p>
+
+                    <div> 
+                        <div class="landscapebutton">
+                            <a href="https://www.discogs.com/user/Kilroy_Wozere/collection" id ="recordsbutton" >Records & Tapes</a>
+                        </div>
+                    </div>
+                
+                
+
+                    <div> 
+                        <div class="landscapebutton">
+                            <a href="videocollection.php" >Videos</a>
+                        </div>
+                    </div>
+
+                
+                    <div> 
+                        <div class="landscapebutton">
+                            <a href="teacards.php" >Tea cards</a>
+                        </div>
+                    </div>
+
+                    <div> 
+                        <div class="landscapebutton">
+                            <a href="linkcollection.php" >Links</a>
+                        </div>
+                    </div>
+
+
+
+                    
+                    <div class="line"></div>
+                    <div w3-include-html="assets/inc/footer.html"></div>
+                </div>
+            </div>   
+            
+        </div>
+
+    </body>
+
+    
+
+</html>
+
+
+
+<script>
+    includeHTML();
+</script>
